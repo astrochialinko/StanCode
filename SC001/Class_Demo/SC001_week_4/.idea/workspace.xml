@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ea59553-57d0-4e27-a1f5-e9ee7579cc16" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1X6X6wGy1SQBbru9noq7X7a54Z4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="SC001_week_4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="SC001_week_4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="SC001_week_4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="SC001_week_4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ea59553-57d0-4e27-a1f5-e9ee7579cc16" name="Default Changelist" comment="" />
+      <created>1580367345776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580367345776</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="91" width="1071" height="755" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584507632740">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="91" width="1071" height="755" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1584507632740" />
+    <state x="328" y="0" key="#file_reading" timestamp="1584507602290">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="328" y="0" key="#file_reading/0.0.1440.900@0.0.1440.900" timestamp="1584507602290" />
+    <state x="310" y="23" key="#how_many_lines" timestamp="1580517286477">
+      <screen x="0" y="23" width="1440" height="780" />
+    </state>
+    <state x="310" y="0" key="#how_many_lines/0.0.1440.900@0.0.1440.900" timestamp="1580368731237" />
+    <state x="310" y="23" key="#how_many_lines/0.23.1440.780@0.23.1440.780" timestamp="1580517286477" />
+    <state x="310" y="0" key="#longest_line" timestamp="1580368874682">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="310" y="0" key="#longest_line/0.0.1440.900@0.0.1440.900" timestamp="1580368874682" />
+    <state width="1414" height="268" key="GridCell.Tab.0.bottom" timestamp="1584509024704">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1414" height="268" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584509024704" />
+    <state width="1368" height="272" key="GridCell.Tab.0.bottom/0.23.1440.780@0.23.1440.780" timestamp="1580517402408" />
+    <state width="1414" height="268" key="GridCell.Tab.0.center" timestamp="1584509024702">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1414" height="268" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584509024702" />
+    <state width="1368" height="272" key="GridCell.Tab.0.center/0.23.1440.780@0.23.1440.780" timestamp="1580517402406" />
+    <state width="1414" height="268" key="GridCell.Tab.0.left" timestamp="1584509024700">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1414" height="268" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584509024700" />
+    <state width="1368" height="272" key="GridCell.Tab.0.left/0.23.1440.780@0.23.1440.780" timestamp="1580517402404" />
+    <state width="1414" height="268" key="GridCell.Tab.0.right" timestamp="1584509024703">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1414" height="268" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584509024703" />
+    <state width="1368" height="272" key="GridCell.Tab.0.right/0.23.1440.780@0.23.1440.780" timestamp="1580517402407" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1585414070561">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585414070561" />
+  </component>
+</project>
