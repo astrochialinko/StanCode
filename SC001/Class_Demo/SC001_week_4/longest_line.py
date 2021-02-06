@@ -1,6 +1,6 @@
 """
 File: longest_line.py
-Name:
+Name: Chia-Lin Ko
 ---------------------------
 This file shows how we can find
 the longest line in romeojuliet.txt
@@ -12,7 +12,16 @@ FILE = 'text/romeojuliet.txt'
 
 
 def main():
-	pass
+	longest_count = 0
+	longest_line = ''
+
+	with open(FILE, 'r') as f:
+		for line in f:
+			if len(line) > longest_count:
+				longest_line = line
+				longest_count = len(line)
+
+	print(longest_line)
 
 
 if __name__ == '__main__':

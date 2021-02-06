@@ -1,29 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ea59553-57d0-4e27-a1f5-e9ee7579cc16" name="Default Changelist" comment="" />
+    <list default="true" id="4ea59553-57d0-4e27-a1f5-e9ee7579cc16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SC001_week_1/.idea/SC001_week_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Final_Exam/practice_final_test_files/.idea/practice_final_test_files.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Assignment4/.idea/Assignment4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pycharm_intro/.idea/pycharm_intro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SC101/Homework/SC101-Assignment0/.idea/SC101-Assignment0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SC001_week_4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SC001_week_4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curb_repair.py" beforeDir="false" afterPath="$PROJECT_DIR$/curb_repair.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/die_roll.py" beforeDir="false" afterPath="$PROJECT_DIR$/die_roll.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_reading.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_reading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flip_horizontally.py" beforeDir="false" afterPath="$PROJECT_DIR$/flip_horizontally.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_processing_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/img_processing_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_processing_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/img_processing_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longest_line.py" beforeDir="false" afterPath="$PROJECT_DIR$/longest_line.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1X6X6wGy1SQBbru9noq7X7a54Z4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+  <component name="RunManager" selected="Python.flip_horizontally">
+    <configuration name="curb_repair" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SC001_week_4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -31,11 +54,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curb_repair.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -44,50 +67,176 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
+    <configuration name="die_roll" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SC001_week_4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/die_roll.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
+    <configuration name="file_reading" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SC001_week_4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file_reading.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
+    <configuration name="flip_horizontally" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SC001_week_4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flip_horizontally.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="how_many_lines" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC001_week_4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/how_many_lines.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="img_processing_1" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC001_week_4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/img_processing_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="img_processing_2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC001_week_4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/img_processing_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="longest_line" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC001_week_4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/longest_line.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="photoshop" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC001_week_4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/photoshop.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -101,47 +250,16 @@
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="184" y="91" width="1071" height="755" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584507632740">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="184" y="91" width="1071" height="755" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1584507632740" />
-    <state x="328" y="0" key="#file_reading" timestamp="1584507602290">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="328" y="0" key="#file_reading/0.0.1440.900@0.0.1440.900" timestamp="1584507602290" />
-    <state x="310" y="23" key="#how_many_lines" timestamp="1580517286477">
-      <screen x="0" y="23" width="1440" height="780" />
-    </state>
-    <state x="310" y="0" key="#how_many_lines/0.0.1440.900@0.0.1440.900" timestamp="1580368731237" />
-    <state x="310" y="23" key="#how_many_lines/0.23.1440.780@0.23.1440.780" timestamp="1580517286477" />
-    <state x="310" y="0" key="#longest_line" timestamp="1580368874682">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="310" y="0" key="#longest_line/0.0.1440.900@0.0.1440.900" timestamp="1580368874682" />
-    <state width="1414" height="268" key="GridCell.Tab.0.bottom" timestamp="1584509024704">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1414" height="268" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584509024704" />
-    <state width="1368" height="272" key="GridCell.Tab.0.bottom/0.23.1440.780@0.23.1440.780" timestamp="1580517402408" />
-    <state width="1414" height="268" key="GridCell.Tab.0.center" timestamp="1584509024702">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1414" height="268" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584509024702" />
-    <state width="1368" height="272" key="GridCell.Tab.0.center/0.23.1440.780@0.23.1440.780" timestamp="1580517402406" />
-    <state width="1414" height="268" key="GridCell.Tab.0.left" timestamp="1584509024700">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1414" height="268" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584509024700" />
-    <state width="1368" height="272" key="GridCell.Tab.0.left/0.23.1440.780@0.23.1440.780" timestamp="1580517402404" />
-    <state width="1414" height="268" key="GridCell.Tab.0.right" timestamp="1584509024703">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1414" height="268" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584509024703" />
-    <state width="1368" height="272" key="GridCell.Tab.0.right/0.23.1440.780@0.23.1440.780" timestamp="1580517402407" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1585414070561">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="0" y="0" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585414070561" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
