@@ -28,27 +28,50 @@ class ZoneGraphics:
         self.ball = GOval(ball_radius*2, ball_radius*2)
         self.ball.filled = True
 
-        self.set_ball_position()
-        self.w.add(self.ball)
+        self.dx = 0
+        self.dy = 0
+        self.lives = 3
+        self.reset_ball()
 
-        self.vx = random.randint(0, MAX_SPEED)
-        self.vy = random.randint(MIN_Y_SPEED, MAX_SPEED)
-
-        # Score word
-        self.score_word = GLabel('Score: ', x= WINDOW_WIDTH*0.02, y=WINDOW_HEIGHT*0.1)
-        self.score_word.font = 'Courier-25-bold'
-        self.w.add(self.score_word)
+        # Lives Word
+        self.lives_word = GLabel('Lives: ' + str(self.lives), x=WINDOW_WIDTH * 0.02, y=WINDOW_HEIGHT * 0.1)
+        self.lives_word.font = 'Courier-25-bold'
+        self.w.add(self.lives_word)
 
         # Initialize mouse listeners
-        #onmouseclicked(restart)
+        onmouseclicked(self.handle_click)
+
+    def handle_click(self, event):
+        obj = self.w.get_object_at(event.x, event.y)
+        if obj == self.ball:
+            self.reset_ball()
+
+    def reset_ball(self):
+        self.set_ball_position()
+        while self.ball_in_zone():
+            self.set_ball_position()
+        self.set_ball_velocity()
+        self.w.add(self.ball)
 
     def set_ball_position(self):
-        while True:
-            rand_x = random.randint(0, self.w.width  - self.ball.width)
-            rand_y = random.randint(0, self.w.height - self.ball.height)
-            if (self.zone.x > rand_x or self.zone.x + self.zone.width < rand_x) or \
-               (self.zone.y > rand_y or self.zone.y + self.zone.height < rand_y):
-                break
+        self.ball.x = random.randint(0, self.w.width-self.ball.width)
+        self.ball.y = random.randint(0, self.w.height-self.ball.height)
 
-        self.ball.x = rand_x
-        self.ball.y = rand_y
+    def ball_in_zone(self):
+        zone_left_side = self.zone.x
+        zone_right_side = self.zone.x + self.zone.width
+        is_ball_x_in_zone = (zone_left_side-self.ball.width) <= self.ball.x <= zone_right_side
+
+        zone_top = self.zone.y
+        zone_bottom = self.zone.y + self.zone.height
+        is_ball_y_in_zone = (zone_top-self.ball.height) <= self.ball.y <= zone_bottom
+
+        return (is_ball_x_in_zone and is_ball_y_in_zone)
+
+    def set_ball_velocity(self):
+        self.dx = random.randint(0, MAX_SPEED)
+        self.dy = random.randint(MIN_Y_SPEED, MAX_SPEED)
+        if random.random() > 0.5:
+            self.dx = -self.dx
+        if random.random() > 0.5:
+            self.dy = -self.dy

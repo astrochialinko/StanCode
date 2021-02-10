@@ -13,19 +13,30 @@ def main():
     line at the middle of the GWindow by clicking on
     the bouncing ball
     """
-    graphics = ZoneGraphics()
+    graphics = ZoneGraphics(ball_radius=20)
+    lives = NUM_LIVES
+
     while True:
-        # Update
-        graphics.ball.move(graphics.vx, graphics.vy)
-
-        # Check
-        if (graphics.ball.x < 0) or (graphics.ball.x+graphics.ball.width > graphics.w.width):
-            graphics.vx = -1*graphics.vx
-        if (graphics.ball.y < 0) or (graphics.ball.y+graphics.ball.height > graphics.w.height):
-            graphics.vy = -1*graphics.vy
-
         # Pause
         pause(FRAME_RATE)
+
+        # check if hitting the zone
+        if graphics.ball_in_zone():
+            lives -= 1
+            graphics.lives_word.text = ('Lives: ' + str(lives))
+            if lives > 0:
+                graphics.reset_ball()
+            else:
+                break
+
+        # Animation
+        graphics.ball.move(graphics.dx, graphics.dy)
+
+        # Reflection Setting
+        if (graphics.ball.x <=0) or (graphics.ball.x + graphics.ball.width >= graphics.w.width):
+            graphics.dx = -graphics.dx
+        if (graphics.ball.y <= 0) or (graphics.ball.y + graphics.ball.height >= graphics.w.height):
+            graphics.dy = -graphics.dy
 
 
 if __name__ == '__main__':
