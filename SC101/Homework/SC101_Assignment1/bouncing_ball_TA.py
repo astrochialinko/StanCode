@@ -1,6 +1,6 @@
 """
 File: bouncing_ball.py
-Name: Chia-Lin Ko
+Name: TA
 -------------------------
 This program simulates a bouncing ball at (START_X, START_Y)
 that has VX as x velocity and 0 as y velocity. Each bounce reduces
@@ -25,13 +25,11 @@ WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 500
 
 # Global variable
-click_num = 0
-ball_x = START_X
-ball_y = START_Y
-
+count = 0
+lock = True
 
 window = GWindow(WINDOW_WIDTH, WINDOW_HEIGHT, title='bouncing_ball.py')
-
+ball = GOval(SIZE, SIZE)
 
 def main():
     """
@@ -40,7 +38,7 @@ def main():
     y velocity to REDUCE of itself.
     """
     # set up the initial ball
-    ball = setup_ball()
+    setup_ball()
     onmouseclicked(bouncing_ball)
 
 
@@ -48,50 +46,42 @@ def setup_ball():
     """
     This function sets the initial condition of the ball
     """
-    ball = GOval(SIZE, SIZE, x=START_X, y=START_Y)
     ball.filled = True
-    window.add(ball)
-    return ball
+    window.add(ball, x=START_X, y=START_Y)
 
 
 def bouncing_ball(mouse):
     """
-    This function display the bouncing ball
+    This function simulates the bouncing process
 
     :param mouse:
     """
-    global click_num, ball_x, ball_y
-
-    # remove the initial ball
-    ball_remove = window.get_object_at(START_X+SIZE/2, START_Y)
-    window.remove(ball_remove)
+    global count, lock
 
     # the initial condition of the ball when clicking the mouse
-    if ball_x == START_X:
-        ball = setup_ball()
-        vy = 0
-    # no response for clicking the mouse when the ball is bouncing
-    else:
-        return None
+    vy = 0
 
-    # move the ball
-    while click_num < 3:
-        if ball_x > WINDOW_WIDTH:
-            click_num +=1
-            ball_x = START_X
-            ball = setup_ball()
-            break
-        else:
+    if lock and count <=3:
+        lock = False  # used to close the mouse-clicked function
+
+        # move the ball
+        while True:
             ball.move(VX, vy)
-            ball_x += VX
+            pause(DELAY)
+
             # ball is falling
-            if ball.y < (WINDOW_HEIGHT-SIZE):
-                vy += GRAVITY
+            vy += GRAVITY
+
+            # ball is outside of the window
+            if ball.x > window.width:
+                count += 1
+                setup_ball()
+                lock = True  # used to open the mouse-clicked function
+                break
+
             # ball is bouncing
-            else:
-                if vy > 0:
-                    vy = -vy * REDUCE
-        pause(DELAY)
+            if ball.y > (window.height-SIZE) and vy >0:
+                vy *= -REDUCE
 
 
 if __name__ == "__main__":
