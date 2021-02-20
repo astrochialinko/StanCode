@@ -1,6 +1,6 @@
 """
 File: average_grades.py
-Name: 
+Name: Chia-Lin Ko
 -------------------------
 This file stores all the scores
 in a python list and calculates the
@@ -18,7 +18,15 @@ def main():
 	print(f"This program averages the input(s), or {EXIT} to exit")
 	
 	lst = []
-	# TODO: Add values to lst 
+	# TODO: Add values to lst
+	while True:
+		score = int(input('Your score: '))
+
+		if score == EXIT:
+			break
+		else:
+			lst.append(score)
+			# lst += [score]  different ways to append the score the the list
 	
 	print('The average:', average_by_index(lst))
 	print('The average:', average_by_for_each(lst))
@@ -32,7 +40,12 @@ def average_by_index(scores):
 	This function uses indices in for loop to calculate
 	the average of scores
 	"""
-	pass
+	total = 0
+	for i in range(len(scores)):
+		score = scores[i]
+		total += score
+
+	return total/len(scores)
 
 
 def average_by_for_each(scores):
@@ -43,7 +56,11 @@ def average_by_for_each(scores):
 	This function uses for each loop to calculate
 	the average of scores
 	"""
-	pass
+	total = 0
+	for score in scores:
+		total += score
+
+	return total/len(scores)
 
 
 if __name__ == '__main__':

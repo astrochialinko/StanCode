@@ -1,16 +1,29 @@
 """
 File: command_line.py
-Name:
+Name: Chia-Lin Ko
 --------------------------
 This file shows how to use command line 
 to launch different functions.
 We will be introducing sys module and use it
 to do the job
 """
+import sys
 
 
 def main():
-	pass
+	command_lst = sys.argv
+	if len(command_lst) == 2:
+		# OKAY
+		if command_lst[1] == 'bulbasaur':
+			draw_bulbasaur()
+		elif command_lst[1] == 'squirtle':
+			draw_squirtle()
+		elif command_lst[1] == 'charmander':
+			draw_charmander()
+		else:
+			print('Illegal Pokemon')
+	else:
+		print('Illegal Format')
 
 
 def draw_charmander():
