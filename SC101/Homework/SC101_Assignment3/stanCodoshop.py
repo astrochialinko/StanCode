@@ -1,13 +1,11 @@
 """
 File: stanCodoshop.py
+Name: Chia-Lin Ko
 ----------------------------------------------
 SC101_Assignment3
 Adapted from Nick Parlante's
 Ghost assignment by Jerry Liao.
-
 -----------------------------------------------
-
-TODO:
 """
 
 import os
@@ -29,7 +27,8 @@ def get_pixel_dist(pixel, red, green, blue):
         dist (int): color distance between red, green, and blue pixel values
 
     """
-    pass
+    dist = ( (red - pixel.red)**2 + (green - pixel.green)**2 + (blue - pixel.blue)**2 )**0.5
+    return dist
 
 
 def get_average(pixels):
@@ -44,7 +43,24 @@ def get_average(pixels):
     Assumes you are returning in the order: [red, green, blue]
 
     """
-    pass
+    # initial setting
+    red_pixel_sum   = 0
+    green_pixel_sum = 0
+    blue_pixel_sum  = 0
+
+    # calculate sum
+    pixel_num = len(pixels)
+    for pixel in pixels:
+        red_pixel_sum   += pixel.red
+        green_pixel_sum += pixel.green
+        blue_pixel_sum  += pixel.blue
+
+    # calculate average
+    red_pixel_avg   = int(red_pixel_sum   / pixel_num)
+    green_pixel_avg = int(green_pixel_sum / pixel_num)
+    blue_pixel_avg  = int(blue_pixel_sum  / pixel_num)
+
+    return [red_pixel_avg, green_pixel_avg, blue_pixel_avg]
 
 
 def get_best_pixel(pixels):
@@ -58,7 +74,23 @@ def get_best_pixel(pixels):
         best (Pixel): pixel closest to RGB averages
 
     """
-    pass
+    # average values of the pixels
+    red_pixel_avg   = get_average(pixels)[0]
+    green_pixel_avg = get_average(pixels)[1]
+    blue_pixel_avg  = get_average(pixels)[2]
+
+    # initial setting
+    pixel_dist_min = 999999
+    best = pixels[0]
+
+    # find the smallest distance
+    for pixel in pixels:
+        pixel_dist = get_pixel_dist(pixel, red_pixel_avg, green_pixel_avg, blue_pixel_avg)
+        if pixel_dist < pixel_dist_min:
+            pixel_dist_min = pixel_dist
+            best = pixel
+
+    return best
 
 
 def solve(images):
@@ -73,8 +105,38 @@ def solve(images):
     width = images[0].width
     height = images[0].height
     result = SimpleImage.blank(width, height)
+
     ######## YOUR CODE STARTS HERE #########
     # Write code to populate image and create the 'ghost' effect
+    for x in range(width):
+        for y in range(height):
+            best_pixel   = get_best_pixel([images[i].get_pixel(x,y) for i in range(len(images))])
+            result_pixel = result.get_pixel(x,y)
+            result_pixel.red   = best_pixel.red
+            result_pixel.green = best_pixel.green
+            result_pixel.blue  = best_pixel.blue
+
+    """
+    # Test code
+    
+    # Milestone 1 - get_pixel_dist(pixel, red, green, blue)
+    # green_im = SimpleImage.blank(20, 20, 'green')
+    # green_pixel = green_im.get_pixel(0,0)
+    # print(get_pixel_dist(green_pixel, 5, 255, 10))
+
+    # Milestone 2 - get_average(pixels)
+    # green_pixel = SimpleImage.blank(20, 20, 'green').get_pixel(0,0)
+    # red_pixel = SimpleImage.blank(20, 20, 'red').get_pixel(0, 0)
+    # blue_pixel = SimpleImage.blank(20, 20, 'blue').get_pixel(0, 0)
+    # print(get_average([green_pixel, green_pixel, green_pixel, blue_pixel]))
+
+    # Milestone 3 - get_best_pixel(pixels)
+    # green_pixel = SimpleImage.blank(20, 20, 'green').get_pixel(0,0)
+    # red_pixel = SimpleImage.blank(20, 20, 'red').get_pixel(0, 0)
+    # blue_pixel = SimpleImage.blank(20, 20, 'blue').get_pixel(0, 0)
+    # best1 = get_best_pixel([green_pixel, blue_pixel, blue_pixel])
+    # print(best1.red, best1.green, best1.blue)
+    """
 
     ######## YOUR CODE ENDS HERE ###########
     print("Displaying image!")
