@@ -1,6 +1,6 @@
 """
 File: score_book.py
-Name: 
+Name: Chia-Lin Ko
 ----------------------
 This program shows all the 
 dict method by implementing 
@@ -30,6 +30,13 @@ def get_scores(d):
 	"""
 	print("Let's input some data!")
 
+	while True:
+		name = input("Name: ")
+		if name == QUIT:
+			break
+		score = int(input('Score: '))
+		d[name] = score
+
 
 def check_score(d):
 	"""
@@ -38,7 +45,16 @@ def check_score(d):
 	This checks if key in d
 	"""
 	print("Let's check the score!")
-	
+	while True:
+		check_name = input('The name you want to check: ')
+		if check_name == QUIT:
+			break
+		if check_name in d:
+			the_score = d[check_name]
+			print('Score: '+ str(the_score))
+		else:
+			print(f'There is no {check_name} in it.')
+
 
 def print_scores(d):
 	"""
@@ -47,6 +63,8 @@ def print_scores(d):
 	This method prints out all the key-value pairs
 	"""
 	print('-----------------------')
+	for student_name, student_score in d.items():
+		print(student_name, '->', student_score)
 
 
 if __name__ == '__main__':

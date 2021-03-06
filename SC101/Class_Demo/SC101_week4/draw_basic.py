@@ -27,7 +27,10 @@ def make_canvas(width, height):
 
 
 def main():
-    pass
+    w = make_canvas(500, 300)
+    w.create_text(0, 0, text='stanCode', anchor=tk.NW, fill='red')
+    w.create_line(0, 300, 300, 300, width=10, fill='blue')
+    tk.mainloop()
     
 
 if __name__ == '__main__':
