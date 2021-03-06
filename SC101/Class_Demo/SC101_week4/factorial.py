@@ -1,6 +1,6 @@
 """
 File: factorial.py
-Name:
+Name: Chia-Lin Ko
 --------------------------
 This program shows what a recursion is by
 implementing factorial function.
@@ -15,7 +15,11 @@ def main():
 
 
 def factorial(n):
-	pass
+	if n == 0:
+		return 1
+	else:
+		temp = n*factorial(n-1)
+		return temp
 
 
 if __name__ == '__main__':
