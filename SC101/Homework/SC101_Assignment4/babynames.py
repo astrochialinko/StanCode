@@ -24,7 +24,12 @@ def add_data_for_name(name_data, year, rank, name):
         name, year, and rank. This function does not return any values.
 
     """
-    pass
+    if name not in name_data:
+        name_data[name] = {}
+    else:
+        if (year in name_data[name]) and (int(rank) > int(name_data[name][year])):
+            pass
+    name_data[name][year] = rank
 
 
 def add_file(name_data, filename):
@@ -41,7 +46,17 @@ def add_file(name_data, filename):
         the provided file name. This function does not return any value.
 
     """
-    pass
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+        year = lines[0].strip()
+        for line in lines[1:]:
+            info_list = line.split(sep=',')
+            rank      = info_list[0].strip()
+            boyname   = info_list[1].strip()
+            girlname  = info_list[2].strip().rstrip('\n')
+
+            add_data_for_name(name_data, year, rank, boyname)
+            add_data_for_name(name_data, year, rank, girlname)
 
 
 def read_files(filenames):
@@ -55,7 +70,11 @@ def read_files(filenames):
     Returns:
         name_data (dict): the dict storing all baby name data in a structured manner
     """
-    pass
+    name_data = {}
+    for filename in filenames:
+        add_file(name_data, filename)
+
+    return name_data
 
 
 def search_names(name_data, target):
@@ -73,7 +92,13 @@ def search_names(name_data, target):
                                     the target string
 
     """
-    pass
+    matching_names = []
+    for name in name_data:
+        target_l = target.lower()
+        name_l   = name.lower()
+        if name_l.find(target_l) != -1:
+            matching_names.append(name)
+    return matching_names
 
 
 def print_names(name_data):

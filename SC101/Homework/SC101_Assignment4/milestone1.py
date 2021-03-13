@@ -1,6 +1,6 @@
 """
 File: Milestone1.py
-Name: 
+Name: Chia-Lin Ko
 -----------------------
 This file tests the milestone 1 for
 our babyname.py project
@@ -10,7 +10,30 @@ import sys
 
 
 def add_data_for_name(name_data, year, rank, name):
-    pass
+    """
+    Adds the given year and rank to the associated name in the name_data dict.
+
+    Input:
+        name_data (dict): dict holding baby name data
+        year (str): the year of the data entry to add
+        rank (str): the rank of the data entry to add
+        name (str): the name of the data entry to add
+
+    Output:
+        This function modifies the name_data dict to store the provided
+        name, year, and rank. This function does not return any values.
+
+    """
+
+    if name not in name_data:
+        name_data[name] = {}
+    else:
+        if (year in name_data[name]) and (int(rank) > int(name_data[name][year])):
+            pass
+    name_data[name][year] = rank
+
+
+
 
 # ------------- DO NOT EDIT THE CODE BELOW THIS LINE ---------------- #
 
