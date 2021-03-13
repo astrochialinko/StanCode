@@ -1,6 +1,6 @@
 """
 File: cantor_set_drawing.py
-Name:
+Name: Chia-Lin Ko
 -----------------------------------
 This program draws as fractal named cantor set
 on GWindow calling the recursive function cantor_set.
@@ -30,7 +30,13 @@ def main():
 
 
 def cantor_set(x, y, width, level):
-	pass
+	if level == 0:
+		pass
+	else:
+		line = GLine(x, y, x+width, y)
+		window.add(line)
+		cantor_set(x, y+SPACE, width/3, level-1)
+		cantor_set(x+2*width/3, y + SPACE, width/3, level - 1)
 
 		
 

@@ -1,6 +1,6 @@
 """
 File: palindrome.py
-Name:
+Name: Chia-Lin Ko
 ----------------------------
 This program prints the answers of whether
 'madam', 'step on no pets', 'Q', 'pythonyp', and
@@ -19,7 +19,13 @@ def main():
 
 
 def is_palindrome(s):
-	pass
+	if (len(s) == 0) or (len(s) == 1):
+		return True
+	else:
+		if s[0] == s[-1]:
+			return is_palindrome(s[1:-1])
+		else:
+			return False
 
 
 if __name__ == '__main__':

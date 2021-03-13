@@ -1,6 +1,6 @@
 """
 File: basic_permutations.py
-Name:
+Name: Chia-Lin Ko
 -----------------------------
 This program finds all the 3-digits binary permutations
 by calling a recursive function binary_permutations.
@@ -14,7 +14,15 @@ def main():
 
 
 def binary_permutations(n):
-	pass
+	binary_permutations_helper(n, '')
+
+
+def binary_permutations_helper(n, current_digits):
+	if len(current_digits) == n:
+		print(current_digits)
+	else:
+		binary_permutations_helper(n, current_digits+'0')
+		binary_permutations_helper(n, current_digits+'1')
 
 
 if __name__ == '__main__':

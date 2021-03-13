@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d77c98bf-59c4-427a-97fb-b78cce6e6dbf" name="Default Changelist" comment="" />
+    <list default="true" id="d77c98bf-59c4-427a-97fb-b78cce6e6dbf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../SC001/Class_Demo/SC001_week_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SC001/Class_Demo/SC001_week_4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SC101_week4/factorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SC101_week4/factorial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SC101_week5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SC101_week5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adv_permutation.py" beforeDir="false" afterPath="$PROJECT_DIR$/adv_permutation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_permutations.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic_permutations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cantor_set_drawing.py" beforeDir="false" afterPath="$PROJECT_DIR$/cantor_set_drawing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_rolls_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/dice_rolls_sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/palindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/palindrome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sq_corners_fractal.py" beforeDir="false" afterPath="$PROJECT_DIR$/sq_corners_fractal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/subsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/SC101-Assignment0/.idea/SC101-Assignment0.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,16 +28,172 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1cyCfzN2uehSOn6koPyl5L6iYoA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RunManager" selected="Python.subsets">
+    <configuration name="adv_permutation" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC101_week5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adv_permutation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="basic_permutations" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC101_week5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/basic_permutations.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cantor_set_drawing" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC101_week5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cantor_set_drawing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dice_rolls_sum" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC101_week5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dice_rolls_sum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="palindrome" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC101_week5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/palindrome.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sq_corners_fractal" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC101_week5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sq_corners_fractal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="subsets" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC101_week5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/subsets.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -37,38 +207,42 @@
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="424" y="67" key="#cantor_set_drawing" timestamp="1596212167091">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="424" y="67" key="#cantor_set_drawing/0.0.1440.900@0.0.1440.900" timestamp="1596212167091" />
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596219324220">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1596219324220" />
-    <state x="424" y="67" key="#sq_corners_fractal" timestamp="1596213624616">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="424" y="67" key="#sq_corners_fractal/0.0.1440.900@0.0.1440.900" timestamp="1596213624616" />
-    <state width="1419" height="741" key="GridCell.Tab.0.bottom" timestamp="1596219338242">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="741" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596219338242" />
-    <state width="1419" height="741" key="GridCell.Tab.0.center" timestamp="1596219338240">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="741" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596219338240" />
-    <state width="1419" height="741" key="GridCell.Tab.0.left" timestamp="1596219338239">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="741" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596219338239" />
-    <state width="1419" height="741" key="GridCell.Tab.0.right" timestamp="1596219338241">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="741" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596219338241" />
-    <state x="226" y="23" width="1214" height="877" key="SettingsEditor" timestamp="1591491988937">
-      <screen x="65" y="23" width="1375" height="877" />
-    </state>
-    <state x="226" y="23" width="1214" height="877" key="SettingsEditor/65.23.1375.877@65.23.1375.877" timestamp="1591491988937" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/palindrome.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/adv_permutation.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/basic_permutations.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dice_rolls_sum.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
