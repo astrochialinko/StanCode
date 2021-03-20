@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03cf4903-056d-48ca-bda4-cc3f4787b373" name="Default Changelist" comment="" />
+    <list default="true" id="03cf4903-056d-48ca-bda4-cc3f4787b373" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SC001/Class_Demo/SC001_week_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SC001/Class_Demo/SC001_week_4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SC101_week4/factorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SC101_week4/factorial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SC101_week6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SC101_week6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/huffman_encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/huffman_encoding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/priority_queue_linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/priority_queue_linked_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/priority_queue_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/priority_queue_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/SC101-Assignment0/.idea/SC101-Assignment0.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/.idea/SC101_Assignment5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/.idea/SC101_Assignment5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/Problem1/recursion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/Problem1/recursion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/anagram.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/anagram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/boggle.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/boggle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/largest_digit.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/largest_digit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/sierpinski.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/SC101_Assignment5/sierpinski.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1fnG1BRTXarqkyozlVJB9sjd6mP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -15,8 +39,97 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RunManager" selected="Python.tree">
+    <configuration name="linked_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC101_week6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linked_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="priority_queue_linked_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC101_week6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/priority_queue_linked_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="priority_queue_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC101_week6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/priority_queue_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tree" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SC101_week6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -29,5 +142,16 @@
       <updated>1596846225608</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

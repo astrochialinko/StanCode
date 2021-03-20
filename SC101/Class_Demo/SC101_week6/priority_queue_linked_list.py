@@ -1,6 +1,6 @@
 """
 File: priority_queue_linked_list.py
-Name: 
+Name: Chia-Lin Ko
 --------------------------
 This file shows how to construct a linked list 
 from scratch and use it to implement a priority queue.
@@ -30,13 +30,35 @@ def main():
 		else:
 			if priority_queue.val[1] > priority:
 				# New node at the beginning
-				pass
+				node = ListNode(data, priority_queue)
+				#node = ListNode(data, None)
+				#node.next = priority_queue
+				priority_queue = node
 			else:
+				cur = priority_queue
 				# New node in between
-				pass
+				while cur.next is not None:
+					if cur.val[1] <= priority < cur.next.val[1]:
+						node = ListNode(data, None)
+						node.next = cur.next
+						cur.next = node
+						break
+					cur = cur.next
 				# New node at the end
-				pass
+				if cur.next is None:
+					node = ListNode(data, None)
+					cur.next = node
 
+	print('--------------------------------')
+	traversal(priority_queue)
+
+
+def traversal(linked_list):
+	cur = linked_list
+	while cur.next is not None:
+		print(cur.val)
+		cur = cur.next
+	print(cur.val)
 
 if __name__ == '__main__':
 	main()

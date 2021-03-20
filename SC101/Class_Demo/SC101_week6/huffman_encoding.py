@@ -1,6 +1,6 @@
 """
 File: huffman_encoding.py
-Name:
+Name: Chia-Lin Ko
 -----------------------------------
 This program demonstrates the idea of zipping/unzipping
 through the algorithm of Huffman Encoding.
