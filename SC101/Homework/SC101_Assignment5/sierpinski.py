@@ -1,6 +1,6 @@
 """
 File: sierpinski.py
-Name: 
+Name: Chia-Lin Ko
 ---------------------------
 This file recursively prints the Sierpinski triangle on GWindow.
 The Sierpinski triangle is a fractal described in 1915 by Waclaw Sierpinski.
@@ -25,20 +25,35 @@ window = GWindow(width=WINDOW_WIDTH, height=WINDOW_HEIGHT)  # The canvas to draw
 
 def main():
 	"""
-	TODO:
+	This program plot the Sierpinski triangle.
 	"""
 	sierpinski_triangle(ORDER, LENGTH, UPPER_LEFT_X, UPPER_LEFT_Y)
 
 
 def sierpinski_triangle(order, length, upper_left_x, upper_left_y):
 	"""
-	:param order:
-	:param length:
-	:param upper_left_x:
-	:param upper_left_y:
-	:return:
+	:param order: int, the order of the Sierpinski triangle
+	:param length: int, the length of the 0th order Sierpinski triangle
+	:param upper_left_x: int, the upper left x coordinate of the 0th order Sierpinski triangle
+	:param upper_left_y: int, the upper left y coordinate of the 0th order Sierpinski triangle
+	:return: None
 	"""
-	pass
+	if order == 0:
+		pass
+	else:
+		plot_triangle(length, upper_left_x, upper_left_y)
+		sierpinski_triangle(order - 1, length / 2, upper_left_x, upper_left_y)
+		sierpinski_triangle(order - 1, length / 2, upper_left_x + 0.5 * length, upper_left_y)
+		sierpinski_triangle(order - 1, length / 2, upper_left_x + 0.25* length, upper_left_y + 0.433 * length)
+
+
+def plot_triangle(length, upper_left_x, upper_left_y):
+	line_up = GLine(upper_left_x, upper_left_y, upper_left_x + length, upper_left_y)
+	line_left = GLine(upper_left_x, upper_left_y, upper_left_x + 0.5 * length, upper_left_y + 0.866 * length)
+	line_right = GLine(upper_left_x + 0.5 * length, upper_left_y + 0.866 * length, upper_left_x + length, upper_left_y)
+	window.add(line_up)
+	window.add(line_left)
+	window.add(line_right)
 
 
 if __name__ == '__main__':

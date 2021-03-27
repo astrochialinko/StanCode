@@ -1,6 +1,6 @@
 """
 File: largest_digit.py
-Name:
+Name: Chia-Lin Ko
 ----------------------------------
 This file recursively prints the biggest digit in
 5 different integers, 12345, 281, 6, -111, -9453
@@ -19,10 +19,20 @@ def main():
 
 def find_largest_digit(n):
 	"""
-	:param n:
-	:return:
+	:param n: int, the input integers
+	:return: int, the biggest digit in the input integers
 	"""
-	pass
+	if n < 0:
+		n = -n
+	units_digit = n%10
+	tens_digit  = (n//10)%10
+
+	if tens_digit == 0:
+		return n
+	elif tens_digit >= units_digit:
+		return find_largest_digit(n//10)
+	else:
+		return find_largest_digit(n//10 - tens_digit + units_digit)
 
 
 if __name__ == '__main__':
