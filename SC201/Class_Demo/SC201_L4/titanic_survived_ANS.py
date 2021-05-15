@@ -1,6 +1,6 @@
 """
 File: titanic_survived.py
-Name: Chia-Lin Ko
+Name: Jerry Liao
 ----------------------------------
 This file contains 3 of the most important steps
 in machine learning:
@@ -8,11 +8,12 @@ in machine learning:
 2) Training
 3) Predicting
 """
+
 import math
 
 TRAIN_DATA_PATH = 'titanic_data/train.csv'
-NUM_EPOCHS = 1000
-ALPHA = 0.01
+NUM_EPOCHS = 8000
+ALPHA = 0.004
 
 
 def sigmoid(k):
@@ -29,7 +30,10 @@ def dot(lst1, lst2):
     : param lst2: list, the weights
     : return: float, the dot product of 2 list
     """
-    return sum(lst1[i]*lst2[i] for i in range(len(lst1)))
+    total = 0
+    for i in range(len(lst1)):
+        total += lst1[i] * lst2[i]
+    return total
 
 
 def main():
@@ -42,6 +46,8 @@ def main():
     # Milestone 2
     training(training_data, weights)
 
+    print('weights:', weights)
+
     # Milestone 3
     predict(training_data, weights)
 
@@ -53,65 +59,69 @@ def data_pre_processing():
     :return: list[Tuple(data, label)], the value of each data on
     (['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked'], 'Survived')
     """
-    training_data = []
+    all_data = []
     with open(TRAIN_DATA_PATH, 'r') as f:
-        is_first = True
+        first = True
         for line in f:
-            if is_first:
-                is_first = False
+            if first:
+                first = False
             else:
-                feature_vector, label = feature_extractor(line)
-                training_data.append((feature_vector, label))
-                
-    return training_data
+                line = line.strip()
+                feature_vector, y = feature_extractor(line)
+                all_data.append((feature_vector, y))
+    return all_data
 
 
 def feature_extractor(line):
     """
     : param line: str, the line of data extracted from the training set
-    : return: list, the feature vector
+    : return: Tuple(list, label), the feature vector and the true label
     """
-    
-    data_list = line.split(',')
-    feature_vector = []
-    label = int(data_list[1])
-
-    # ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']
-    for i in range(len(data_list)):
+    data_lst = line.split(',')
+    #[Id, Surv, Pclass, F_Name, L_Name, Sex5, Age, SibSp, ParCh, Ticket, Fare10, Cabin, Embarked]
+    ans = []
+    y = int(data_lst[1])
+    for i in range(len(data_lst)):
         if i == 2:
             # Pclass
-            feature_vector.append((int(data_list[i])-1)/(3-1))
+            if data_lst[i].isdigit():
+                ans.append((int(data_lst[i])-1) / (3-1))
+            else:
+                ans.append(0)
         elif i == 5:
             # Gender
-            if data_list[i] == 'male':
-                feature_vector.append(0)
+            if data_lst[i]:
+                if data_lst[i] == 'male':
+                    ans.append(1)
+                else:
+                    ans.append(0)
             else:
-                feature_vector.append(1)
+                ans.append(1)
         elif i == 6:
             # Age
-            if data_list[i].isdigit():
-                feature_vector.append((float(data_list[i])-0.42)/(80-0.42))
+            if data_lst[i].isdigit():
+                ans.append((float(data_lst[i]) - 0.42) / (80-0.42))
             else:
-                feature_vector.append((29.699-0.42)/(80-0.42)) # average age
+                ans.append((30 - 0.42) / (80-0.42))
         elif i == 7:
             # SibSp
-            feature_vector.append((int(data_list[i])-0)/(8-0))
+            ans.append((int(data_lst[i]) - 0) / 8)
         elif i == 8:
             # Parch
-            feature_vector.append((int(data_list[i])-0/(6-0)))
+            ans.append((int(data_lst[i]) - 0) / 6)
         elif i == 10:
             # Fare
-            feature_vector.append((float(data_list[i])-0)/(512.33-0))
+            ans.append((float(data_lst[i]) - 0) / 512.3292)
         elif i == 12:
-            # Embarked
-            if data_list[i] == 'C':
-                feature_vector.append((0-0)/2)
-            elif data_list[i] == 'Q':
-                feature_vector.append((2-0)/2)
-            else: # S and missing value
-                feature_vector.append((1-0)/2) 
-            
-    return feature_vector, label
+            if data_lst[i] == 'S':
+                ans.append(0 / 2)
+            elif data_lst[i] == 'C':
+                ans.append(1 / 2)
+            elif data_lst[i] == 'Q':
+                ans.append(2 / 2)
+            else:
+                ans.append(0 / 2)
+    return ans, y
 
 
 # Milestone 2
@@ -125,16 +135,14 @@ def training(training_data, weights):
         cost = 0
         for x, y in training_data:
             #################################
-
-            h = sigmoid(dot(x, weights))
+            # w = w - alpha*dL_dw
+            # w = w - alpha*(h-y)*x
+            h = sigmoid(dot(weights, x))
             cost += -(y*math.log(h)+(1-y)*math.log(1-h))
-
-            # w = w - alpha * dL_dw
-            # wi = wi - alpha * (h-y)*xi
-            for i in range(len(x)):
-                weights[i] = weights[i] - ALPHA * (h-y) * x[i]
+            # w = w - alpha*(h-y)*x
+            for i in range(len(weights)):
+                weights[i] = weights[i] - ALPHA*(h-y)*x[i]
             #################################
-        cost /= (2*len(x))
         if epoch%100 == 0:
             print('Cost over all data:', cost)
 
@@ -165,19 +173,9 @@ def get_prediction(x, weights):
     : param weights: list[float], the weight vector (the parameters on each feature)
     : return: float, the score of x (if it is > 0 then the passenger may survive)
     """
-    k = dot(x, weights)
-    h = sigmoid(k)
-    if h > 0.5:
-        return 1
-    else:
-        return 0
-    '''
-    # other solution
-    if k > 0:
-        return 1
-    else:
-        return 0
-    '''
+    score = dot(x, weights)
+    return 1 if score > 0 else 0
+
 
 if __name__ == '__main__':
     main()
