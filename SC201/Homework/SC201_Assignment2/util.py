@@ -1,3 +1,4 @@
+#!/usr/local/anaconda3/envs/stanCode37/bin/python3
 import os, random, operator, sys
 from collections import Counter
 
@@ -13,7 +14,8 @@ def increment(d1, scale, d2):
     @param dict d2: a feature vector.
     """
     # BEGIN_YOUR_CODE (our solution is 2 lines of code, but don't worry if you deviate from this)
-    raise Exception("Not implemented yet")
+    for d2_key, d2_value in d2.items():
+        d1[d2_key] = d1.get(d2_key, 0) + scale*d2_value
     # END_YOUR_CODE
 
 
@@ -30,7 +32,7 @@ def dotProduct(d1, d2):
         return dotProduct(d2, d1)
     else:
         # BEGIN_YOUR_CODE (our solution is 1 line of code, but don't worry if you deviate from this)
-        raise Exception("Not implemented yet")
+        return sum([d2[d2_key]*d1.get(d2_key, 0) for d2_key in d2])
         # END_YOUR_CODE
 
 

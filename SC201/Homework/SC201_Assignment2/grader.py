@@ -1,12 +1,16 @@
+#!/usr/local/anaconda3/envs/stanCode37/bin/python3
 """
 File: grader.py
 -----------------------------
-Milestone 4 answer: TODO:
-
+Milestone 4 answer:
+1. Training error is lower than validation error
+2. The training error decreases when the number of epochs are increased
+3. The validation error decreases first, hint a minumum, 
+and then increases when the number of epochs are increased. 
+It suggests that the model starts to overfit when the epoch higher than 60.
 """
 
 
-# !/usr/bin/python3
 
 import graderUtil
 import util
@@ -74,6 +78,7 @@ def test4a2():
     trainExamples = readExamples('polarity.train')
     validationExamples = readExamples('polarity.dev')
     featureExtractor = submission.extractWordFeatures
+    #featureExtractor = submission.extractCharacterFeatures(4)
     weights = submission.learnPredictor(trainExamples, validationExamples, featureExtractor, numEpochs=40, alpha=0.01)
     outputWeights(weights, 'weights')
     outputErrorAnalysis(validationExamples, featureExtractor, weights, 'error-analysis')  # Use this to debug
@@ -87,9 +92,11 @@ grader.add_basic_part('4a-2', test4a2, max_points=30, max_seconds=40, descriptio
 
 ############################################################
 # Milestone 5: Finishing up
-# TODO: Is there any difference between using extractCharacterFeatures and extractWordFeatures? Why?
-# TODO: Your answer here
-# TODO: ______________________________________________________________________________________
+# Q: Is there any difference between using extractCharacterFeatures and extractWordFeatures? Why?
+# A: The validation error of using word features decreases when the number of epochs are increased. 
+# However, the error of using character features decreases first, hint a minumum, 
+# and then slightly increases when the number of epochs are increased. 
+# The difference suggests that using character features will more likely lead to overfit.
 ############################################################
 
 ### 5a

@@ -1,7 +1,8 @@
-#!/usr/bin/python
+#!/usr/local/anaconda3/envs/stanCode37/bin/python3
 
 import math
 import random
+import numpy as np
 from collections import defaultdict
 from util import *
 from typing import Any, Dict, Tuple, List, Callable
@@ -23,12 +24,17 @@ def extractWordFeatures(x: str) -> FeatureVector:
     Example: "I am what I am" --> {'I': 2, 'am': 2, 'what': 1}
     """
     # BEGIN_YOUR_CODE (our solution is 4 lines of code, but don't worry if you deviate from this)
-    raise Exception("Not implemented yet")
+    d = defaultdict(int)
+    for word in x.split():
+        d[word] += 1
+    return d
     # END_YOUR_CODE
 
 
 ############################################################
 # Milestone 4: Sentiment Classification
+def sigmoid(k):
+    return 1/(1+math.exp(-k))
 
 def learnPredictor(trainExamples: List[Tuple[Any, int]], validationExamples: List[Tuple[Any, int]],
                    featureExtractor: Callable[[str], FeatureVector], numEpochs: int, alpha: float) -> WeightVector:
@@ -45,10 +51,26 @@ def learnPredictor(trainExamples: List[Tuple[Any, int]], validationExamples: Lis
     identity function may be used as the featureExtractor function during testing.
     """
     weights = {}  # feature => weight
-
     # BEGIN_YOUR_CODE (our solution is 12 lines of code, but don't worry if you deviate from this)
-    raise Exception("Not implemented yet")
-    # END_YOUR_CODE
+    error_arr = np.zeros((numEpochs, 3))
+    for epoch in range(numEpochs):
+        for i in range(len(trainExamples)):
+            data, label = trainExamples[i]
+            y = 0 if int(label) == -1 else 1 # y=1/0 for positive/negative review
+            featureVector = featureExtractor(data)
+            h = sigmoid(dotProduct(weights,featureVector))
+            increment(weights,-alpha*(h-y),featureVector)
+        def predictor(x): return 1 if dotProduct(weights,featureExtractor(x)) > 0 else -1
+        trainError = evaluatePredictor(trainExamples, predictor)
+        validationError = evaluatePredictor(validationExamples, predictor)
+        print('Training Error: (%s epoch): %s'%(epoch, trainError))
+        print('Validation Error: (%s epoch): %s'%(epoch, validationError))
+        error_arr[epoch][0] = epoch
+        error_arr[epoch][1] = trainError
+        error_arr[epoch][2] = validationError
+    np.savetxt('./Milestone1/error_word.txt', error_arr, header='Epoch Training_Error Validation_Error')
+
+     # END_YOUR_CODE
     return weights
 
 
@@ -71,7 +93,9 @@ def generateDataset(numExamples: int, weights: WeightVector) -> List[Example]:
         Note that the weight vector can be arbitrary during testing.
         """
         # BEGIN_YOUR_CODE (our solution is 3 lines of code, but don't worry if you deviate from this)
-        raise Exception("Not implemented yet")
+        sub_weight = dict(random.sample(weights.items(), k=random.randint(1,len(weights))))
+        phi = {key: 1 for key in sub_weight}
+        y = 1 if dotProduct(phi, weights) >=0 else -1
         # END_YOUR_CODE
         return phi, y
 
@@ -91,7 +115,11 @@ def extractCharacterFeatures(n: int) -> Callable[[str], FeatureVector]:
 
     def extract(x: str) -> Dict[str, int]:
         # BEGIN_YOUR_CODE (our solution is 5 lines of code, but don't worry if you deviate from this)
-        raise Exception("Not implemented yet")
+        x = x.replace(" ", "")
+        d = defaultdict(int)
+        for i in range(len(x)-n+1):
+            d[str(x[i:i+n])]+=1
+        return d
         # END_YOUR_CODE
 
     return extract
