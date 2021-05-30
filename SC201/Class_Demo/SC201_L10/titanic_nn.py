@@ -1,6 +1,6 @@
 """
 File: titanic_nn.py
-Name: 
+Name: Chia-Lin Ko
 -----------------------------
 This file demonstrates how to use batch
 gradient descent to update weights by numpy 
@@ -35,11 +35,19 @@ def main():
 	print('X.shape', X_train.shape)
 	# ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare']
 	X = normalize(X_train)
-	####################################
-	#                                  #
-	#              TODO:               #
-	#                                  #
-	####################################
+	# classifier = h.fit(X, Y)
+	W1, W2, B1, B2 = two_layer_nn(X, Y)
+
+	# Predict: Trainging Data
+	K1 = np.dot(W1.T, X) + B1
+	A1 = np.maximum(0, K1)
+	scores = np.dot(W2.T, A1) + B2 # K1
+	predictions = np.where(scores>0, 1, 0) 
+	# other ways to predict predictions
+	# predictions = 1/(1+np.exp(-K2)) # H
+	# predictions = np.where(predictions>0.5, 1, 0)
+	acc = np.equal(predictions, Y)
+	print('Training Acc: ', np.sum(acc)/m)
 
 
 def normalize(X):
@@ -65,23 +73,40 @@ def two_layer_nn(X, Y):
 	np.random.seed(1)
 
 	# Initialize all the weights and biases
-	####################################
-	#                                  #
-	#              TODO:               #
-	#                                  #
-	####################################
+	W1 = np.random.rand(n, N1) - 0.5
+	B1 = np.random.rand(N1, 1) - 0.5
+	W2 = np.random.rand(N1, N2) - 0.5
+	B2 = np.random.rand(N2, 1) - 0.5
+
 
 	for epoch in range(NUM_EPOCHS):
-		pass
 		# Forward Pass
-		# TODO:
+		K1 = np.dot(W1.T, X) + B1
+		A1 = np.maximum(0, K1)
+		K2 = np.dot(W2.T, A1) + B2
+		H = 1 / (1 + np.exp(-K2))
+		L = -(Y*np.log(H)+(1-Y)*np.log(1-H))
+		J = (1/m)*np.sum(L)
+
+		if epoch % 1000 == 0:
+			print('Cost:', J)
 
 		# Backward Pass
-		# TODO:
+		dK2 = (1/m)*np.sum(H-Y, axis=0, keepdims=True)
+		dW2 = A1.dot(dK2.T)
+		dB2 = np.sum(dK2, axis=1, keepdims=True)
+		dA1 = W2.dot(dK2)
+		dK1 = dA1*np.where(K1>0, 1, 0)
+		dW1 = X.dot(dK1.T)
+		dB1 = np.sum(dK1, axis=1, keepdims=True)
 
 		# Updates all the weights and biases
-		# TODO:
-	return
+		W2 -= ALPHA*dW2
+		B2 -= ALPHA*dB2
+		W1 -= ALPHA*dW1
+		B1 -= ALPHA*dB1
+
+	return W1, W2, B1, B2
 
 
 def data_preprocessing(mode='train'):
